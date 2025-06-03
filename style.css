@@ -334,13 +334,14 @@ body {
 
 
 .depoimento .botao{
-   padding: 20px;
+   padding: 30px ;
    border: none;
    border-radius: 20px;
    background-color: #ffff00;
    transition: 0.3s;
    cursor: pointer;
    margin-top: 20px;
+   
 }
 
 .depoimento .botao:hover{
