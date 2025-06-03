@@ -17,10 +17,18 @@ body {
     padding: 0 20px;
 }
 
+.container .logo img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 /* Header */
 .header {
     padding: 20px 0;
     background-color: #2a2a2a;
+    display: flex;
+
 }
 
 .logo-circle {
@@ -87,7 +95,7 @@ body {
 }
 
 .hero-image img {
-    width: 100%;
+    width: ;
     height: auto;
     border-radius: 20px;
 }
