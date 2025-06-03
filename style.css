@@ -141,8 +141,11 @@ body {
     transition: transform 0.3s ease;
 }
 
-.benefit-card:hover {
-    transform: translateY(-5px);
+.benefit-card:hover {   color: #ffff00;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color:#000;
+    transform: translateY(-2px);
 }
 
 .benefit-icon {
@@ -155,7 +158,9 @@ body {
     font-weight: bold;
     margin-bottom: 15px;
 }
-
+.textao{
+    background-color: #ffff00;
+}
 .benefit-card p {
     font-size: 0.95rem;
     line-height: 1.5;
@@ -325,7 +330,9 @@ body {
 .depoimento h1{
     font-style: bold;
 }
+.textao{
 
+}
 .depoimento p{
     
     border-radius: 2px;
