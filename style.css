@@ -17,10 +17,9 @@ body {
     padding: 0 20px;
 }
 
-.container .logo img{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.container .logo img {
+    display: block;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -30,7 +29,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .logo-circle {
@@ -75,6 +73,28 @@ body {
     opacity: 0.9;
 }
 
+.video-container {
+  position: relative;
+  width: 720px;
+  height: 405px;
+  overflow: hidden;
+}
+
+.masked-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 405"><path d="M360,80 C420,40 580,60 600,180 C620,300 520,360 360,340 C200,320 120,240 140,160 C160,100 280,120 360,80Z" fill="white"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 405"><path d="M360,80 C420,40 580,60 600,180 C620,300 520,360 360,340 C200,320 120,240 140,160 C160,100 280,120 360,80Z" fill="white"/></svg>');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+
 .cta-button {
     background-color: #ffff00;
     color: #000;
@@ -89,18 +109,17 @@ body {
 
 .cta-button:hover {
     color: #ffff00;
-    font-weight: bold;
-    font-family: sans-serif;
-    background-color:#000;
+    background-color: #000;
     transform: translateY(-2px);
 }
 
+/* Hero Image */
 .hero-image {
     flex: 1;
 }
 
 .hero-image img {
-    width: ;
+    width: 100%;
     height: auto;
     border-radius: 20px;
 }
@@ -141,10 +160,9 @@ body {
     transition: transform 0.3s ease;
 }
 
-.benefit-card:hover {   color: #ffff00;
-    font-weight: bold;
-    font-family: sans-serif;
-    background-color:#000;
+.benefit-card:hover {
+    color: #ffff00;
+    background-color: #000;
     transform: translateY(-2px);
 }
 
@@ -158,9 +176,7 @@ body {
     font-weight: bold;
     margin-bottom: 15px;
 }
-.textao{
-    background-color: #ffff00;
-}
+
 .benefit-card p {
     font-size: 0.95rem;
     line-height: 1.5;
@@ -300,26 +316,23 @@ body {
     border-radius: 15px;
 }
 
-.local{
+/* Local Section */
+.local {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
-}
-.local img{
-     
-    width: 150px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s;
-  
 }
 
-.depoimento{
+.local img {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Depoimento Section */
+.depoimento {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,34 +340,29 @@ body {
     padding-top: 50px;
 }
 
-.depoimento h1{
-    font-style: bold;
+.depoimento h1 {
+    font-weight: bold;
 }
-.textao{
 
-}
-.depoimento p{
-    
+.depoimento p {
     border-radius: 2px;
 }
 
-.depoimento img{
+.depoimento img {
     width: 900px;
 }
 
-
-.depoimento .botao{
-   padding: 30px ;
-   border: none;
-   border-radius: 20px;
-   background-color: #ffff00;
-   transition: 0.3s;
-   cursor: pointer;
-   margin-top: 20px;
-   
+.depoimento .botao {
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffff00;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-.depoimento .botao:hover{
+.depoimento .botao:hover {
     background-color: #cccc17;
 }
 
@@ -362,28 +370,32 @@ footer {
     background-color: white;
 }
 
-/* Responsive Design */
+/* Responsividade */
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .hero-text h1 {
         font-size: 2rem;
     }
-    
+
     .benefits-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .locations-content {
         flex-direction: column;
     }
-    
+
     .video-placeholder img {
         width: 100%;
         max-width: 400px;
+    }
+
+    .depoimento img {
+        width: 100%;
     }
 }
 
@@ -391,13 +403,12 @@ footer {
     .hero-text h1 {
         font-size: 1.5rem;
     }
-    
+
     .benefits-title {
         font-size: 2rem;
     }
-    
+
     .method h2 {
         font-size: 1.8rem;
     }
 }
-
