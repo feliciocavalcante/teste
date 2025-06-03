@@ -351,6 +351,9 @@ body {
     background-color: #cccc17;
 }
 
+footer {
+    background-color: white;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -390,3 +393,4 @@ body {
         font-size: 1.8rem;
     }
 }
+
