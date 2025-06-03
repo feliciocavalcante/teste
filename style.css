@@ -292,6 +292,62 @@ body {
     border-radius: 15px;
 }
 
+.local{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.local img{
+     
+    width: 150px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  
+}
+
+.depoimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.depoimento h1{
+    font-style: bold;
+}
+
+.depoimento p{
+    
+    border-radius: 2px;
+}
+
+.depoimento img{
+    width: 900px;
+}
+
+
+.depoimento .botao{
+   padding: 20px;
+   border: none;
+   border-radius: 20px;
+   background-color: #ffff00;
+   transition: 0.3s;
+   cursor: pointer;
+   margin-top: 20px;
+}
+
+.depoimento .botao:hover{
+    background-color: #cccc17;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-content {
